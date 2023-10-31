@@ -1,0 +1,82 @@
+@import '../../UI/sass/variables.scss';
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    &__left {
+        width: 16%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        transform: translateY(-50%);
+
+        @include respond(big-desktop) {
+            width: 12%;
+        }
+
+        @include respond(tab-land) {
+            width: 18%;
+        }
+
+        @include respond(phone) {
+            width: 25%;
+        }
+    }
+
+    &__logoBox {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 100;
+    }
+
+    &__logo {
+       height: 9rem;
+
+       @include respond(tab-port){
+            height: 8rem;
+        }
+
+        @include respond(phone-s){
+            height: 7.5rem;
+        }
+    }
+
+    &__right {
+        width: 16%;
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(big-desktop) {
+            width: 12%;
+        }
+
+        @include respond(tab-land) {
+            width: 18%;
+        }
+
+        @include respond(phone) {
+            width: 25%;
+        }
+
+        @include respond(phone-s){
+            width: 27%;
+        }
+
+        &__admin {
+            justify-content: flex-end;
+        }
+    }
+}

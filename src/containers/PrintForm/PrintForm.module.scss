@@ -1,0 +1,20 @@
+@import '../../components/UI/sass/variables.scss';
+
+.PrintForm {
+
+    &__btn {
+        padding: 1.5rem;
+        margin-top: 1.6rem;
+        width: 10%;
+        font-size: 1.8rem;
+        background-color: $color-secondary;
+        color: $color-grey-light-2;
+        border-radius: 1rem;
+        outline: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-black;
+        }
+    }
+}

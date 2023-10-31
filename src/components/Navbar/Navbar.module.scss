@@ -1,0 +1,20 @@
+@import '../UI/sass/variables.scss';
+
+.navbar {
+    height: 11vh;
+    background-color: $color-black;
+    margin: 0;
+    position: relative;
+
+    @include respond(tab-port){
+        height: 10vh;
+    }
+
+    @include respond(phone) {
+        height: 7.6vh;
+    }
+
+    @include respond(phone-s){
+        height: 7.2vh;
+    }
+}

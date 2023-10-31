@@ -1,0 +1,36 @@
+@import '../../UI/sass/variables.scss';
+
+.Footer__textBox {
+    margin-left: 1.6rem;
+
+    &__title {
+        color: $color-grey-light-2;
+        font-size: 2.8rem;
+        font-weight: bold;
+
+        @include respond(tab-port){
+            font-size: 2.2rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
+
+        @include respond(phone-s) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__span {
+        color: $color-grey-dark-2;
+        font-size: 1.4rem;
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+
+        @include respond(phone-s) {
+            font-size: 8px;
+        }
+    }
+}

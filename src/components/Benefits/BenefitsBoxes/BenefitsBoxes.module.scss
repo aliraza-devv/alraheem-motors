@@ -1,0 +1,13 @@
+@import '../../UI/sass/variables.scss';
+
+.Benefits__Boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;    
+
+    @include respond(phone){
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,8 @@
+@import '../../UI/sass/variables.scss';
+
+.Footer__right {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}

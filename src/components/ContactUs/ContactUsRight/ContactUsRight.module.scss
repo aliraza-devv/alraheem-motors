@@ -1,0 +1,23 @@
+@import '../../UI/sass/variables.scss';
+
+.ContactUs__right {
+
+    @include respond(phone) {
+        display: none;
+    }
+
+    &__svg {
+        width: 56rem;
+        height: 36.5rem;
+
+        @include respond(tab-land) {
+            width: 46rem;
+            height: 30rem;
+        }
+
+        @include respond(tab-port) {
+            width: 36rem;
+            height: 28rem;
+        }
+    }
+}

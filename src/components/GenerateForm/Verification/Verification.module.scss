@@ -1,0 +1,24 @@
+@import '../../UI/sass/variables.scss';
+
+.Verification {
+    margin-top: 13rem;
+    display: flex;
+    justify-content: space-around;
+
+    &__box {
+        width: 20%;
+        text-align: center;
+
+        &__text {
+            font-size: 1.4rem;
+            color: $color-secondary;
+            margin-top: 6px;
+        }
+    }
+
+}
+
+.Hr {
+    background-color: $color-secondary;
+    height: 2px;
+}

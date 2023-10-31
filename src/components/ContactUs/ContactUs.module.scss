@@ -1,0 +1,46 @@
+@import '../UI/sass/variables.scss';
+
+.contactUs {
+    padding: 2rem;
+    margin-top: 2rem;
+    
+    &__title {
+        font-size: 3rem;
+        color: $color-secondary;
+        text-align: center;
+
+        @include respond(tab-port){
+            font-size: 2.2rem;
+        }
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            width: 30%;
+            height: .3rem;
+            margin: auto;
+            margin-top: .6rem;
+            background-color: $color-primary;
+        }
+    }
+
+    &__body {
+        padding: 2rem;
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond(tab-port){
+            margin-top: 2rem;
+        }
+
+        @include respond(phone) {
+            display: inline-block;
+        }
+    }
+}

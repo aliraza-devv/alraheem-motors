@@ -1,0 +1,102 @@
+@import '../../UI/sass/variables.scss';
+
+.ContactUs__form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__input {
+        width: 40rem;
+        padding: 1.3rem;
+        margin: 1rem 1.4rem;
+        font-size: 1.6rem;
+        border-radius: 2px;
+        border: none;
+        box-shadow: 2px 2px 5px rgba($color-black, 0.3);
+
+        @include respond(tab-port){
+            width: 30rem;
+        }
+
+        @include respond(phone) {
+            width: 24rem;
+        }
+
+        @include respond(phone-s) {
+            width: 20rem;
+        }
+
+
+        &:focus {
+            background-color: $color-grey-dark-1;
+            outline: $color-grey-dark-1;
+        }
+
+        &:valid {
+            border: 2px solid $color-success;
+        }
+    
+        &:not(:placeholder-shown):invalid {
+            border: 2px solid $color-error;
+            color: $color-error;
+        }
+    }
+
+    &__textarea {
+        width: 40rem;
+        padding: 1.3rem;
+        margin: 1rem 1.4rem;
+        font-size: 1.6rem;
+        font-family: 'Roboto', 'sans-serif';
+        border-radius: 2px;
+        border: none;
+        box-shadow: 2px 2px 5px rgba($color-black, 0.3);        
+
+        @include respond(tab-port){
+            width: 30rem;
+        }
+
+        @include respond(phone) {
+            width: 24rem;
+        }
+
+        @include respond(phone-s) {
+            width: 20rem;
+        }
+
+        &:valid {
+            border: 2px solid $color-success;
+        }
+    
+        &:not(:placeholder-shown):invalid {
+            border: 2px solid $color-error;
+            color: $color-error;
+        }
+
+        &:focus {
+            background-color: $color-grey-dark-1;
+            outline: $color-grey-dark-1;
+        }
+    }
+
+    &__btn {
+        background-color: $color-secondary;
+        color: $color-grey-light-1;
+        font-size: 1.6rem;
+        border: none;
+        border-radius: .6rem;
+        padding: 1rem;
+        width: 25%;
+        margin-top: 1.6rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-black;
+        }
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+    }
+}

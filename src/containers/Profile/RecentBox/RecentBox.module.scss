@@ -1,0 +1,32 @@
+@import '../../../components/UI/sass/variables.scss';
+
+.RecentBox {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $color-grey-dark-2;
+    padding: 6px;            
+    cursor: pointer;
+    background-color: $color-grey-bg;
+
+    &:first-child { border-top: 2px solid $color-grey-dark-2; }
+
+    &:hover {
+        background-color: $color-grey-dark-1;
+    }
+
+    &__info {
+        text-align: center;
+    
+    }
+    
+    &__title {
+        font-size: 1.6rem;
+        color: $color-secondary;
+        font-weight: bold;
+    }
+    
+    &__span {
+        font-size: 1.5rem;
+        color: $color-grey-dark-2;
+    }
+}

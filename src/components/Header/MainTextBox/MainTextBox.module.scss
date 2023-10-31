@@ -1,0 +1,47 @@
+@import '../../UI/sass/variables.scss';
+
+.mainTextBox{
+    position: absolute;
+    top: 26%;
+    left: 2%;
+
+    @include respond(phone) {
+        top: 10%;
+    }
+
+    &__title {
+        font-size: 3.6rem;
+        color: $color-tertiary;
+
+        @include respond(tab-port){
+            font-size: 2.8rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+        }
+
+        @include respond(phone-s){
+            font-size: 1.4rem;
+        }
+    }
+    
+    &__para {
+        font-size: 2rem;
+        color: $color-grey-light-2;
+        margin-top: .4rem;
+
+        @include respond(tab-port){
+            font-size: 1.8rem;
+            line-height: 1.4;
+        }
+
+        @include respond(phone) {
+            font-size: 1.2rem;
+        }
+
+        @include respond(phone-s){
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import '../UI/sass/variables.scss';
+
+.InputDropdown__search {
+    display: flex;
+    align-items: center;
+
+    &__btn {
+        margin-left: 8px;
+        border: none;
+        cursor: pointer;
+        background-color: $color-secondary;
+        padding: 1.7rem;
+        color: $color-grey-light-1;
+        border-radius: 1rem;
+        font-size: 2rem;
+
+        &:hover {
+            background-color: $color-black;
+        }        
+    }
+}

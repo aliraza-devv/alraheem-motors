@@ -1,0 +1,59 @@
+@import '../../UI/sass/variables.scss';
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &__textBox {
+        text-align: center;
+
+        &__title {
+            font-size: 1.6rem;
+            color: $color-secondary;
+            font-weight: bold;
+        }
+
+        &__span {
+            font-size: 1.2rem;
+            color: $color-grey-dark-2;
+        }
+    }
+
+    &__logo {
+        height: 5rem;
+        margin-left: 3rem;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 20px;
+
+        &__box {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            &__text {
+                color: $color-grey-dark-2;
+                font-size: 1rem;
+                color: $color-black;
+                font-weight: bold;
+            }
+
+            &__svg {
+                width: 1.4rem;
+                height: 1.6rem;
+                margin-right: 1rem;
+
+                & > g > path {
+                    fill: $color-secondary;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,26 @@
+@import '../sass/variables.scss';
+
+.modal {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+    background-color: $color-grey-light-2;
+    z-index: 1000;
+    padding: 2rem;
+    width: 80%;
+    overflow: auto;
+    text-align: right;
+
+    &__cancelBtn {
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+
+        & > svg > g > path {
+            fill: $color-secondary;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../components/UI/sass/variables.scss';
+
+.AddCustomer {
+    padding: 4rem;
+    
+    &__title {
+
+        &__heading {
+            font-size: 3rem;
+            color: $color-secondary;
+            font-weight: bold;
+        }
+
+        &__span {
+            font-size: 1.8rem;
+            color: $color-grey-dark-2;
+        }
+    }
+
+    &__details {
+        background-color: $color-grey-bg;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: .6rem;
+        border: 2px solid $color-grey-dark-2;
+        box-shadow: 4px 2px 8px $color-black;
+    }
+}

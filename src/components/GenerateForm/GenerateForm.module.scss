@@ -1,0 +1,34 @@
+@import '../UI/sass/variables.scss';
+
+.GenerateForm {
+    background-color: $color-white;
+    padding: 1rem;
+    margin: 2px;
+    padding-top: 0;
+    position: relative;
+    text-align: left;
+
+    &__bg {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1000;
+        opacity: 0.10;
+        height: 25rem;
+    }
+
+    &__issue {
+        text-align: right;
+
+        &__text {
+            font-weight: bold;
+            margin-right: 30px;
+
+            & span {
+                color: $color-black;;
+            }
+        }
+    }
+
+};

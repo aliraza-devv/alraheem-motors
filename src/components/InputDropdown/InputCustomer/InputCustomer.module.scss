@@ -1,0 +1,27 @@
+@import '../../UI/sass/variables.scss';
+
+.Input__search {
+    width: 50rem;
+    height: 5rem;
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1.7rem;
+    outline: none;
+    background: $color-grey-light-1;
+    box-shadow: 0 1rem 2rem rgba($color-black,.1);
+    font-size: 1.6rem;
+        
+    &::placeholder {
+        color: $color-grey-dark-2;
+    }
+
+    &:valid {
+        border: 2px solid $color-success;
+    }
+
+    &:not(:placeholder-shown):invalid {
+        border: 2px solid $color-error;
+        color: $color-error;
+    }
+}

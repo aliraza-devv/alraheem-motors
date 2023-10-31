@@ -1,0 +1,55 @@
+@import '../UI/sass/variables.scss';
+
+.searchedResult {
+    padding: 2.5rem;
+
+    &__textBox {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 3rem;
+        color: $color-secondary;
+        font-weight: bold;
+    }
+
+    &__span {
+        font-size: 1.6rem;
+        color: $color-grey-dark-2;
+    }
+
+    &__box {
+        margin: .6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__title {
+            font-size: 2.2rem;
+            color: $color-secondary;
+            font-weight: bold;
+        }
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            background-color: $color-secondary;
+            color: $color-grey-light-1;
+            font-size: 1.6rem;
+            border: none;
+            border-radius: .6rem;
+            padding: 1.2rem;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $color-black;
+            }
+
+            & > svg {
+                margin-right: 4px;
+            }
+        }
+    }
+
+
+}

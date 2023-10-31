@@ -1,0 +1,48 @@
+@import '../../UI/sass/variables.scss';
+
+.contactBox {
+    position: absolute;
+    top: 26%;
+    right: 2%;
+    border-radius: 1.2rem;
+    width: 30%;
+    padding: 2rem;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+
+    @include respond(phone) {
+        padding: 1rem;
+        top: 40%;
+        width: 50%;
+    }
+
+    @include respond(phone-s) {
+        padding: 1rem;
+        top: 34%;
+        width: 50%;
+    }
+    
+
+    &__heading {
+        font-size: 2.8rem;
+        color: $color-grey-light-2;
+        text-align: center;
+
+        @include respond(tab-port){
+            font-size: 2rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 35%;
+            height: .3rem;
+            margin: auto;
+            margin-top: .6rem;
+            background-color: $color-primary;
+        }
+    }
+}

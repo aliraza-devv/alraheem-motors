@@ -1,0 +1,42 @@
+@import '../UI/sass/variables.scss';
+
+.showcase {
+    background: url('../../assets/img/showcase-bg.png');
+    background-size: cover;
+    background-position: center;
+    height:65vh;
+    text-align: center;
+    position: relative;
+
+    &__textbox {
+        width: 20%;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    &__search {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%);
+    }
+
+    &__title {
+        font-size: 3rem;
+        color: $color-grey-light-2;
+        text-align: center;
+
+        &::after {
+            content: '';
+            display: block;
+            color: $color-primary;
+            width: 80%;
+            height: .2rem;
+            margin: .6rem auto;
+            background-color: $color-primary;
+        }
+    }
+}

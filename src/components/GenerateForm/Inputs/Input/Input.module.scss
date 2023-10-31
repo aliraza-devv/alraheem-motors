@@ -1,0 +1,19 @@
+@import '../../../UI/sass/variables.scss';
+
+.Input {
+    width: 20%;
+    margin-top: 4px;
+
+    &__title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: $color-secondary;
+        margin-bottom: 8px;
+    }
+
+    &__box {
+        border: 1px solid $color-black;
+        padding: 8px;
+        font-size: 1.2rem;
+    }
+}

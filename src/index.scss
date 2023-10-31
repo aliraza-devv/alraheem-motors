@@ -1,0 +1,110 @@
+@import './components/UI/sass/variables.scss';
+
+*,
+*::after,
+*::before {
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+
+html  {
+    // This Defines What 1 rem is. 
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.input__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    
+    &__box {
+        display: flex;
+        justify-content: space-around;
+
+        &__textBox {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+
+            &__label {
+                font-size: 1.8rem;
+                color: $color-secondary;
+                font-weight: bold;
+                align-self: flex-start;
+            }
+
+            &__input {
+                padding: .8rem;
+                margin: 1rem;
+                border: 1px solid $color-grey-dark-2;
+                border-radius: 4px;
+                font-size: 1.4rem;
+                align-self: flex-start;
+
+                &-large {
+                    width: 80%;
+                }
+
+                &-small {
+                    width: 65%;
+                }
+                
+                &::placeholder {
+                    color: $color-grey-dark-2;
+                }
+
+                &:focus {
+                    outline: none;
+                    border-color: $color-secondary;
+                    background-color: $color-grey-light-1;
+                }
+
+                &:not(:placeholder-shown):valid {
+                    border: 2px solid $color-success;
+                }
+            
+                &:not(:placeholder-shown):invalid {
+                    border: 2px solid $color-error;
+                    color: $color-error;
+                }
+            }
+        }
+    }
+}
+
+.formText {
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.4rem;
+    animation: autoHide 5s forwards;
+
+    &__success {
+        color: $color-success;
+        background-color: rgba($color-success, .2);
+        border: 1px solid $color-success;
+    }
+
+    &__error {
+        color: $color-error;
+        background-color: rgba($color-error, .2);
+        border: 1px solid $color-error;
+    }
+}
+
+@keyframes autoHide {
+    0%   {opacity: 1;}
+    90%  {opacity: .9;}
+    95%  {opacity: .6;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes autoHide {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}

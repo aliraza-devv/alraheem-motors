@@ -1,0 +1,7 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+.calendar-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

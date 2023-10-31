@@ -1,0 +1,24 @@
+@import '../UI/sass/variables.scss';
+
+.header {
+    height: 80vh;
+    background-color: $color-grey-light-1;
+    background-image: url('../../assets/img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+
+    @include respond(tab-port){
+        height: 70vh;
+    }
+
+    @include respond(phone) {
+        height: 50vh;
+    }
+
+    @include respond(phone-s) {
+        height: 60vh;
+    }
+}

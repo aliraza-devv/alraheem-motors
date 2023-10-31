@@ -1,0 +1,32 @@
+@import '../../UI/sass/variables.scss';
+
+.services {
+
+    &__textBox {
+        margin: 5rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__title {
+        color: $color-grey-light-2;
+        font-size: 3.6rem;
+        font-weight: bold;
+
+        @include respond(tab-port) {
+            font-size: 2.6rem;
+        }
+    }
+    
+    &__span {
+        color: $color-grey-dark-2;
+        font-size: 2rem;
+        margin: 8px 0;
+
+        @include respond(tab-port) {
+            font-size: 1.4rem;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import '../../UI/sass/variables.scss';
+
+.navItem {
+    color: $color-grey-light-2;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    @include respond(big-desktop) {
+        font-size: 1.8rem;
+    }
+
+    @include respond(tab-port){
+        font-size: 1.2rem;
+    }
+
+    @include respond(phone-s){
+        font-size: 8px;
+    }
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    &__active{
+        color: $color-primary;
+    }
+}
+
+.line__hover::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: $color-primary;
+    transition: width .3;
+}
+
+.line__hover:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.under__line::after {
+    content: '';
+    display: block;
+    color: $color-primary;
+    width: 100%;
+    height: .2rem;
+    margin-top: .6rem;
+    background-color: $color-primary;
+
+    @include respond(phone-s){
+        margin: 0;
+    }
+}

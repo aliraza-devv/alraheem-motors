@@ -1,0 +1,25 @@
+@import '../../UI/sass/variables.scss';
+
+.Footer__linkBox {
+
+    @include respond(phone) {
+        &:last-child {
+            display: none;
+        }
+    }
+
+    &__title {
+        color: $color-grey-light-2;
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+
+        @include respond(tab-port){
+            font-size: 1.8rem;
+        }
+
+        @include respond(phone-s){
+            font-size: 1.6rem;
+            margin-top: 4px;
+        }
+    }
+}

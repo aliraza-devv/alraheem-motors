@@ -1,0 +1,9 @@
+@import '../../../UI/sass/variables.scss';
+
+.Inputs__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 4px;
+}

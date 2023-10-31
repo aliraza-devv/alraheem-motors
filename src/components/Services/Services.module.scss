@@ -1,0 +1,28 @@
+@import '../UI/sass/variables.scss';
+
+.services {
+    background-image: url('../../assets/img/showcase-bg.png');    
+    padding-top: 2rem;
+    padding-bottom: 32rem;
+    background-size: cover;
+    transform: skewY(-3deg);
+    margin-top: 7rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    
+    & > * {
+        transform: skewY(3deg);
+    }
+
+    @include respond(tab-port) {
+        height: 130vh;
+    }
+
+    @include respond(phone-s){
+        height: 115vh;
+    }
+
+    @include respond(height-s){
+        height: 160vh;
+    }
+}

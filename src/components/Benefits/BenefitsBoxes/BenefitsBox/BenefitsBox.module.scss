@@ -1,0 +1,69 @@
+@import '../../../UI/sass/variables.scss';
+
+.Benefits__box {
+    margin-top: 6rem;
+
+    @include respond(phone){
+        margin-top: 3rem;
+    }
+
+    @include respond(phone-s){
+        margin-top: 2rem;
+    }
+    
+    &__svg {
+        width: 13.6rem; 
+        height: 13.1rem;
+        margin-bottom: 1rem;
+
+        @include respond(tab-port){
+            width: 10rem;
+            height: 10rem;
+        }
+
+        @include respond(phone-s){
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+
+    &__title {
+        color: $color-secondary;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+
+        @include respond(tab-port){
+            font-size: 1.8rem;
+        }
+
+        @include respond(phone-s){
+            font-size: 1.6rem;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 40%;
+            height: .3rem;
+            margin: auto;
+            margin-top: .6rem;
+            background-color: $color-primary;
+        }
+    }
+
+    &__para {
+        margin-top: 1rem;
+        color: $color-secondary;
+        font-size: 1.6rem;
+        text-align: center;
+
+        @include respond(tab-port){
+            font-size: 1.4rem;
+        }
+
+        @include respond(phone-s){
+            font-size: 1.2rem;
+        }
+    }
+}

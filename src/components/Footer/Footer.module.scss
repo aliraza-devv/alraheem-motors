@@ -1,0 +1,17 @@
+@import '../UI/sass/variables.scss';
+
+.Footer {
+    background-color: $color-black;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    height: 40vh;
+
+    @include respond(tab-port){
+        height: 35vh;
+    }
+
+    @include respond(phone) {
+        padding: 2rem;
+    }
+}

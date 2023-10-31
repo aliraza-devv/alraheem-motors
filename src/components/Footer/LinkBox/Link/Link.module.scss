@@ -1,0 +1,40 @@
+@import '../../../UI/sass/variables.scss';
+
+.Footer__linkBox__link {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+
+    @include respond(phone-s){
+        margin: 6px;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+
+        @include respond(phone-s){
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+
+    &__text {
+        color: $color-grey-light-2;
+        font-size: 1.4rem;
+        margin: 0 6px;
+        text-decoration: none;
+
+        @include respond(tab-port){
+            font-size: 1.2rem;
+        }
+
+        @include respond(phone-s){
+            font-size: 1rem;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../UI/sass/variables.scss';
+
+.navSItem {
+    color: $color-grey-light-2;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    @include respond(big-desktop) {
+        font-size: 1.8rem;
+    }
+
+    @include respond(tab-port){
+        font-size: 1.2rem;
+    }
+
+    @include respond(phone-s){
+        font-size: 8px;
+    }
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.line__hover::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: $color-primary;
+    transition: width .3;
+}
+
+.line__hover:hover::after {
+    width: 100%;
+    transition: width .3s;
+}

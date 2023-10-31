@@ -1,0 +1,13 @@
+@import '../../UI/sass/variables.scss';
+
+.Dropdown__search {
+    outline: none;
+    background: $color-grey-light-1;
+    color: $color-secondary;
+    border: 1px solid $color-secondary;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 1.8rem;
+    height: 5.2rem;
+    box-shadow: 0 3rem 2rem -2rem rgba($color-black,.1);
+}

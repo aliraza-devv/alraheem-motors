@@ -1,0 +1,36 @@
+@import '../../components/UI/sass/variables.scss';
+
+.Customers {
+    text-align: center;
+
+    &__svg {
+        width: 35rem;
+        height: 28rem;
+        margin-top: 4rem;
+    }
+
+    &__btn {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        margin: 2rem 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $color-secondary;
+        cursor: pointer;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            color: $color-primary;
+            width: 80%;
+            height: .2rem;
+            margin: .4rem auto;
+            background-color: $color-primary;
+        }
+    }
+}
